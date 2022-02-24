@@ -1,7 +1,7 @@
 const discord = require('discord.js');
 const client = new discord.Client();
 const botsettings = require('./botsettings.json');
-const token = process.env.token;
+const token = botsettings.token;
 
 const prompt = (ask) => {
     let ans = require('child_process')
