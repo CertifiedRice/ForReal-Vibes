@@ -1,7 +1,7 @@
 const discord = require('discord.js');
 const client = new discord.Client();
 const botsettings = require('./botsettings.json');
-const token = botsettings.token;
+const token = config.token;
 
 const prompt = (ask) => {
     let ans = require('child_process')
@@ -33,4 +33,4 @@ try {
     startBot();
 }
  
-client.login(token);
+client.login(config.token);
