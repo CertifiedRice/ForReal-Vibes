@@ -6,6 +6,7 @@ module.exports.activity =
             {
                 const activities_list =
                     [
+                        'https://forreal-bots.github.io/',
                         '+help',
                         `with [${client.guilds.cache.first().memberCount}] members`,
                         'with Certified_Rice',
