@@ -111,9 +111,10 @@ module.exports.run = async (client, message, args) =>
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
                 .setAuthor(`ForReal Vibes, av.avatarBot`, av.avatarBot)
+                .setTitle('Prefix => +')
                 .addFields
                 (
-                    { name: '**Command Categories**\n', value: 
+                    { name: '**Command Categories**\n', value:
                     '``ctf      :`` Commands for ctf of the server\n' +
                     '``fun      :`` Commands for entertainment!\n' +
                     '``general  :`` Commands for general usage\n' +

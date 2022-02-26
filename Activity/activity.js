@@ -9,6 +9,9 @@ module.exports.activity =
                         'https://forreal-bots.github.io/',
                         '+help',
                         'with Certified_Rice',
+                        `run +help!`,
+                        `made by CertifiedRice`,
+
                     ];
                 const stat = activities_list[Math.floor(Math.random() * activities_list.length - 1) + 1];
                 client.user.setActivity(stat,
@@ -16,6 +19,6 @@ module.exports.activity =
                         type: 'STREAMING',
                         url: 'https://www.twitch.tv/certified_rice'
                     });
-            }, 1000);
+            }, 10000);
         }
     }
