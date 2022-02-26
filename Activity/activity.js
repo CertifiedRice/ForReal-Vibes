@@ -8,7 +8,6 @@ module.exports.activity =
                     [
                         'https://forreal-bots.github.io/',
                         '+help',
-                        `with [${client.guilds.cache.first().memberCount}] members`,
                         'with Certified_Rice',
                     ];
                 const stat = activities_list[Math.floor(Math.random() * activities_list.length - 1) + 1];
@@ -17,6 +16,6 @@ module.exports.activity =
                         type: 'STREAMING',
                         url: 'https://www.twitch.tv/certified_rice'
                     });
-            }, 10000);
+            }, 1000);
         }
     }
