@@ -1,26 +1,26 @@
 const botsettings = require('../botsettings.json');
 
-module.exports.run = async (client, message, args) => 
+module.exports.run = async (client, message, args) =>
 {
     try
     {
         let prefix = botsettings.prefix;
 
-        let cmd = message.content.toLowerCase().split(`${prefix}ping`);
-    
+        let cmd = message.content.toLowerCase().split(`${prefix}support`);
+
         if (cmd)
         {
             var a = [];
             a.push(cmd.slice(prefix));
             var again = a.slice(' ').shift();
         }
-        if (again[1] || again[1] != '') 
+        if (again[1] || again[1] != '')
         {
             message.reply('this doesn\'t support argument.');
         }
         else
         {
-            message.channel.send('Pong! ');
+            message.channel.send('https://discord.gg/g5fJFvDjnq');
         }
     }
     catch (err)
@@ -31,10 +31,10 @@ module.exports.run = async (client, message, args) =>
 }
 
 module.exports.config =
-{
-    name: 'ping',
-    description: 'pong',
-    usage: '/ping',
-    accessableby: 'Members',
-    aliases: []
-}
+    {
+        name: 'support',
+        description: 'support command',
+        usage: '+support',
+        accessableby: 'Members',
+        aliases: []
+    }

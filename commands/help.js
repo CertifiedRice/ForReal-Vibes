@@ -29,7 +29,7 @@ module.exports.run = async (client, message, args) =>
         {
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
-                .setAuthor(`ForReal Vibes, av.avatarBot`)
+                .setAuthor(`ForReal Vibes`)
                 .addFields
                 (
                     { name: 'Commands in **ctf**', value:
@@ -43,7 +43,7 @@ module.exports.run = async (client, message, args) =>
         {
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
-                .setAuthor(`ForReal Vibes, av.avatarBot`, av.avatarBot)
+                .setAuthor(`ForReal Vibes`, av.avatarBot)
                 .addFields
                 (
                     { name: 'Commands in **fun**', value: 
@@ -64,7 +64,7 @@ module.exports.run = async (client, message, args) =>
         {
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
-                .setAuthor(`ForReal Vibes, av.avatarBot`, av.avatarBot)
+                .setAuthor(`ForReal Vibes`, av.avatarBot)
                 .addFields
                 (
                     { name: 'Commands in **general**', value: 
@@ -81,7 +81,7 @@ module.exports.run = async (client, message, args) =>
         {
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
-                .setAuthor(`ForReal Vibes, av.avatarBot`, av.avatarBot)
+                .setAuthor(`ForReal Vibes`, av.avatarBot)
                 .addFields
                 (
                     { name: 'Commands in **mod**', value: '``kick   :`` Kick @user', inline: true },
@@ -95,7 +95,7 @@ module.exports.run = async (client, message, args) =>
         {
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
-                .setAuthor(`ForReal Vibes, av.avatarBot`, av.avatarBot)
+                .setAuthor(`ForReal Vibes`, av.avatarBot)
                 .addFields
                 (
                     { name: 'Commands in **Leveling**', value: '``+level    :`` see your level', inline: true }
@@ -110,8 +110,9 @@ module.exports.run = async (client, message, args) =>
         {
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
-                .setAuthor(`ForReal Vibes, av.avatarBot`, av.avatarBot)
+                .setAuthor(`ForReal Vibes`, av.avatarBot)
                 .setTitle('Prefix => +')
+                .setDescription('**Commands**, use `+support to get support`')
                 .addFields
                 (
                     { name: '**Command Categories**\n', value:

@@ -35,7 +35,6 @@ fs.readdir("./commands/", (err, files) =>
 
 
 client.on("message", async message => {
-
     // Prefix
     let prefix = botsettings.prefix;
 
