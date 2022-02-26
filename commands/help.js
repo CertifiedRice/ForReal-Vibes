@@ -23,7 +23,6 @@ module.exports.run = async (client, message, args) =>
             && helpArgs[0] != 'fkick' && helpArgs != 'fban'
             && helpArray != `${prefix}help`)
         {
-            message.channel.send(`${cmd} is not a command/category, idiot.`);
         }
 
         if (helpArgs[0] == 'ctf')
@@ -92,6 +91,20 @@ module.exports.run = async (client, message, args) =>
             message.channel.send(embed);
         }
 
+        if (helpArgs[0] == 'leveling')
+        {
+            var embed = new Discord.MessageEmbed()
+                .setColor(colorEmbed.color)
+                .setAuthor(`ForReal Vibes, av.avatarBot`, av.avatarBot)
+                .addFields
+                (
+                    { name: 'Commands in **Leveling**', value: '``+level    :`` see your level', inline: true }
+                )
+
+            message.channel.send(embed);
+        }
+
+
         //Normal usage of (prefix)help without any args. (Shows all of the commands and you should set the commands yourself)
         if(!helpArgs[0]) 
         {
@@ -104,6 +117,7 @@ module.exports.run = async (client, message, args) =>
                     '``ctf      :`` Commands for ctf of the server\n' +
                     '``fun      :`` Commands for entertainment!\n' +
                     '``general  :`` Commands for general usage\n' +
+                            '``leveling  :`` Commands for the leveling system\n' +
                     '``mod      :`` Commands for mods\n', inline: true }
                 )
                 
