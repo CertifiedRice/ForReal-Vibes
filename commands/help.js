@@ -53,6 +53,8 @@ module.exports.run = async (client, message, args) =>
                     '``owo      :`` OwO\n' +
                     '``ping     :`` pong\n' +
                     '``uwu      :`` UwU\n' +
+                    '``howgay :`` How gay are you?\n' +
+                            '``simpmeter :`` Begone simp!\n' +
                     '``whoasked :`` whoasked\n', inline: true }
                 )
 

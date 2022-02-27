@@ -13,7 +13,6 @@ module.exports.run = async (client, message, args) =>
 
         if (cmd)
         {
-            await message.delete({ timeout: 1000 });
             var a = [];
             a.push(cmd.slice(prefix));
             var again = a.slice(' ').shift();
