@@ -108,8 +108,7 @@ module.exports.run = async (client, message, args) =>
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
                 .setAuthor(`ForReal Vibes`, av.avatarBot)
-                .setTitle('Prefix => +')
-                .setDescription('**Commands**, use `+support to get support`')
+                .setTitle('Utility and Info commands')
                 .addFields
                 (
                     { name: '**Command Categories**\n', value:
