@@ -42,6 +42,6 @@ module.exports.config = {
     name: 'uwu',
     description:  'UwU',
     usage: '/uwu',
-    accessableby: 'Members',
+    accessibly : 'Members',
     aliases: []
 }

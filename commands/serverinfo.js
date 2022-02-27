@@ -51,6 +51,6 @@ module.exports.config = {
     name: 'serverinfo',
     description:  'server information',
     usage: '+serverinfo',
-    accessableby: 'Members',
+    accessibly : 'Members',
     aliases: []
 }

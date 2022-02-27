@@ -51,6 +51,6 @@ module.exports.config =
     name: 'fban',
     description: 'fake ban',
     usage: '/fban',
-    accessableby: 'Members',
+    accessibly : 'Members',
     aliases: []
 }

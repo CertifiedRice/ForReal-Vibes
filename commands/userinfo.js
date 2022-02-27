@@ -48,6 +48,6 @@ module.exports.config = {
     name: 'userinfo',
     description:  'user information',
     usage: '+userinfo',
-    accessableby: 'Members',
+    accessibly : 'Members',
     aliases: []
 }

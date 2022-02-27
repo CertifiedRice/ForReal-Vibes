@@ -35,6 +35,6 @@ module.exports.config =
         name: 'support',
         description: 'support command',
         usage: '+support',
-        accessableby: 'Members',
+        accessibly : 'Members',
         aliases: []
     }

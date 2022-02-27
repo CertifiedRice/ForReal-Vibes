@@ -5,6 +5,5 @@ module.exports = client =>
 {
     console.clear();
     console.log(`${client.user.username} has been started`);
-    
     activity.activity.run(client);
 }

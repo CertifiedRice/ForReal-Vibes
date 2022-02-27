@@ -42,6 +42,6 @@ module.exports.config =
     name: 'whoasked',
     description: 'Who asked?',
     usage: '/whoasked',
-    accessableby: 'Members',
+    accessibly : 'Members',
     aliases: []
 }

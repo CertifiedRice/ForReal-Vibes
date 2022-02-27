@@ -37,6 +37,6 @@ module.exports.config =
         name: 'simpmeter',
         description: 'simp',
         usage: '+simpmeter',
-        accessableby: 'Members',
+        accessibly : 'Members',
         aliases: []
     }
