@@ -103,6 +103,25 @@ module.exports.run = async (client, message, args) =>
             message.channel.send(embed);
         }
 
+        if (helpArgs[0] == 'utility')
+        {
+            var embed = new Discord.MessageEmbed()
+                .setColor(colorEmbed.color)
+                .setAuthor(`ForReal Vibes`, av.avatarBot)
+                .setTitle('Prefix => +')
+                .setDescription('**Commands**, use `+support to get support`')
+                .addFields
+                (
+                    { name: '**Command Categories**\n', value:
+                            '``+userinfo      :`` User information\n' +
+                            '``+serverinfo      :`` Server Information', inline: true }
+                )
+
+            message.channel.send(embed);
+
+            message.channel.send(embed);
+        }
+
 
         //Normal usage of (prefix)help without any args. (Shows all of the commands and you should set the commands yourself)
         if(!helpArgs[0]) 
