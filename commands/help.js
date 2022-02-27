@@ -105,12 +105,12 @@ module.exports.run = async (client, message, args) =>
             message.channel.send(embed);
         }
 
-        if (helpArgs[0] == 'utility')
+        if (helpArgs[0] == 'info')
         {
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
                 .setAuthor(`ForReal Vibes`, av.avatarBot)
-                .setTitle('Utility and Info commands')
+                .setTitle('Info commands')
                 .addFields
                 (
                     { name: '**Command Categories**\n', value:
@@ -136,7 +136,7 @@ module.exports.run = async (client, message, args) =>
                     '``ctf      :`` Commands for ctf of the server\n' +
                     '``fun      :`` Commands for entertainment!\n' +
                     '``general  :`` Commands for general usage\n' +
-                    '``utility      :`` Commands for utility\n' +
+                    '``info      :`` Commands for info\n' +
                             '``leveling  :`` Commands for the leveling system\n' +
                     '``mod      :`` Commands for mods\n', inline: true }
                 )
