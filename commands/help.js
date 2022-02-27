@@ -117,8 +117,6 @@ module.exports.run = async (client, message, args) =>
                 )
 
             message.channel.send(embed);
-
-            message.channel.send(embed);
         }
 
 
@@ -136,6 +134,7 @@ module.exports.run = async (client, message, args) =>
                     '``ctf      :`` Commands for ctf of the server\n' +
                     '``fun      :`` Commands for entertainment!\n' +
                     '``general  :`` Commands for general usage\n' +
+                    '``utility      :`` Commands for utility\n' +
                             '``leveling  :`` Commands for the leveling system\n' +
                     '``mod      :`` Commands for mods\n', inline: true }
                 )
