@@ -47,7 +47,6 @@ client.on("message", async message => {
     if(commandfile) commandfile.run(client,message,args)
 })
 
-
 // level
 
 client.on("message" ,function(message) {
@@ -90,8 +89,9 @@ client.on("message" ,function(message) {
         let user = message.mentions.users.first() || message.author
 
         let embed = new Discord.MessageEmbed()
-            .setTitle("Level Card")
+            .setTitle(`${user.username}  Level's`)
             .setColor("#00ffff")
+            .setThumbnail(user.displayAvatarURL())
             .addField("Level: ",xpfile[user.id].level)
             .addField("XP: ", xpfile[user.id].xp+"/"+xpfile[user.id].reqxp)
             .addField("XP Required: ",xpfile[user.id].reqxp)
