@@ -15,27 +15,12 @@ module.exports.run = async (client, message, args) =>
 
         //Custom Help command by using the second argument.
         if (helpArgs[0] != 'fun' && helpArgs[0] != 'mod' && helpArgs[0] != 'general' && helpArgs[0] != 'ctf'
-            && helpArgs[0] != 'flag'
             && helpArgs[0] != 'hi' && helpArgs[0] != 'bye' && helpArgs[0] != 'uwu' && helpArgs[0] != 'owo' && helpArgs[0] != 'ping' && helpArgs[0] != 'whoasked' && helpArgs[0] != 'urgay'
             && helpArgs[0] != 'bins' && helpArgs[0] != 'avatar' && helpArgs[0] != 'membercount' && helpArgs[0] != 'creator'
             && helpArgs[0] != 'clear' && helpArgs[0] != 'kick'
             && helpArgs[0] != 'fkick' && helpArgs != 'fban'
             && helpArray != `${prefix}help`)
         {
-        }
-
-        if (helpArgs[0] == 'ctf')
-        {
-            var embed = new Discord.MessageEmbed()
-                .setColor(colorEmbed.color)
-                .setAuthor(`ForReal Vibes`)
-                .addFields
-                (
-                    { name: 'Commands in **ctf**', value:
-                    '``flag     :`` compare your flag to the real one', inline: true }
-                )
-
-            message.channel.send(embed);
         }
 
         if (helpArgs[0] == 'fun') 
@@ -133,7 +118,6 @@ module.exports.run = async (client, message, args) =>
                 .addFields
                 (
                     { name: '**Command Categories**\n', value:
-                    '``ctf      :`` Commands for ctf of the server\n' +
                     '``fun      :`` Commands for entertainment!\n' +
                     '``general  :`` Commands for general usage\n' +
                     '``info      :`` Commands for info\n' +
@@ -152,7 +136,7 @@ module.exports.run = async (client, message, args) =>
             { 
                 command = client.commands.get(command);
                 var embed = new Discord.MessageEmbed()
-                    .setAuthor(`${command.config.name} ☆`, av.avatarBot)
+                    .setAuthor(`${command.config.name} `, av.avatarBot)
                     .setDescription(`
                     - **Command's Description** __${command.config.description || "There is no Description for this command."}__
                     - **Command's Usage:** __${command.config.usage || "No Usage"}__

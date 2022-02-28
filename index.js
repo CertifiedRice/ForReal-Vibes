@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const botsettings = require('./botsettings.json')
 const client = new Discord.Client({disableEveryone: true});
-require('discord-buttons')(client);
+
 
 require("./util/eventHandler")(client)
 

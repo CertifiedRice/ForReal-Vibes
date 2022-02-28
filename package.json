@@ -4,12 +4,30 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@discordjs/opus": "^0.3.2",
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@discordjs/opus": "^0.3.3",
+    "@discordjs/voice": "^0.8.0",
     "discord-buttons": "^4.0.0-deprecated",
-    "discord-player": "^3.0.0-beta.1",
+    "discord-player": "^3.4.0",
     "discord-xp": "^1.1.16",
+    "discord-ytdl-core": "^5.0.4",
     "discord.js": "^12.3.1",
-    "fs": "0.0.1-security"
+    "distube": "^3.3.2",
+    "fs": "0.0.1-security",
+    "libsodium-wrappers": "^0.7.9",
+    "merge-options": "^3.0.4",
+    "node-fetch": "^3.2.0",
+    "soundcloud-scraper": "^5.0.2",
+    "spotify-url-info": "^2.2.6",
+    "tiny-typed-emitter": "^2.1.0",
+    "undici": "^4.14.1",
+    "youtube-sr": "^4.1.13",
+    "ytdl-core": "^4.10.1",
+    "ytpl": "^2.2.3",
+    "ytsr": "^3.6.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
