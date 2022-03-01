@@ -56,7 +56,7 @@ module.exports.run = async (client, message, args) =>
                     { name: 'Commands in **general**', value: 
                     '``avatar       :`` user avatar in an embed\n' +
                     '``bins         :`` list of bins\n' +
-                    '``creator      :`` informations about the bot\n' +
+                    '``creator      :`` information about the bot\n' +
                     '``membercount  :`` show the number of members', inline: true }
                 )
 
@@ -69,9 +69,10 @@ module.exports.run = async (client, message, args) =>
                 .setColor(colorEmbed.color)
                 .setAuthor(`ForReal Vibes`, av.avatarBot)
                 .addFields
-                (
-                    { name: 'Commands in **mod**', value: '``kick   :`` Kick @user', inline: true },
-                    { name: 'Commands in **mod**', value: '``ban    :`` Ban @user', inline: true }
+                ({ name: 'Commands in **mod**', value:
+                    '``Ban         :`` Ban a member!\n' +
+                    '``Kick      :`` Kick a member!\n' +
+                    '``clear  :`` Clear the messages!', inline: true}
                 )
 
             message.channel.send(embed);

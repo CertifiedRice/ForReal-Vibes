@@ -26,7 +26,7 @@ module.exports.run = async (client, message, args) =>
         {
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
-                .setAuthor('Bins ✧', av.avatarBot)
+                .setAuthor('Bins', av.avatarBot)
                 .setDescription(':fire: [__**``Ghostbin``**__](https://ghostbin.co/)\n' + 
                 ':fire: [__**``Pastebin``**__](https://pastebin.com/)\n' +
                 ':fire: [__**``Hastebin``**__](https://hastebin.com/)')

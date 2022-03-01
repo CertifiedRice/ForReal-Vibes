@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) =>
     {
         let prefix = botsettings.prefix;
 
-        let cmd = message.content.toLowerCase().split(`${prefix}membercount`);
+        let cmd = message.content.toLowerCase().split(`${prefix}creator`);
 
         if (cmd)
         {
@@ -25,8 +25,8 @@ module.exports.run = async (client, message, args) =>
         { 
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.colorbot)
-                .setAuthor('Creator ✧', av.avatarBot)
-                .setDescription('')
+                .setAuthor('Creator ', av.avatarBot)
+                .setDescription('Bot created by ``Certified Rice#8386``')
 
             message.channel.send(embed);
         }

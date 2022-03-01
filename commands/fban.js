@@ -26,7 +26,7 @@ module.exports.run = async (client, message, args) =>
 
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
-                .setAuthor('Ban ✧', av.avatarBot)
+                .setAuthor('Ban', av.avatarBot)
                 .setDescription(`${user} has been banned!`)
 
         message.channel.send(embed);

@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args) =>
             console.log(`\n${user} has been fake kicked.`);
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
-                .setAuthor('Kick ✧', av.avatarBot)
+                .setAuthor('Kick', av.avatarBot)
                 .setDescription(`${user} has been kicked!`)
 
             message.channel.send(embed);

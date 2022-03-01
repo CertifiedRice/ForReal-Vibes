@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args) =>
         { 
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
-                .setAuthor('membercount ✧', av.avatarBot)
+                .setAuthor('membercount ', av.avatarBot)
                 .setDescription(`The server has ${client.guilds.cache.first().memberCount} members!`)
 
             message.channel.send(embed);

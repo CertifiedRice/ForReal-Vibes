@@ -16,7 +16,7 @@ module.exports.run = async (client, message, args) =>
         {
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
-                .setAuthor('Avatar ✧', av.avatarBot)
+                .setAuthor('Avatar', av.avatarBot)
                 .setTitle(user.username)
                 .setImage(user.displayAvatarURL({size: 1024, dynamic: true}))
             

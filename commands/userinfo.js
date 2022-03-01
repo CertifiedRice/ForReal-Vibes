@@ -25,6 +25,7 @@ module.exports.run = async (client, message, args) =>
         {
             var embed = new Discord.MessageEmbed()
                 .setColor("#ff0000")
+                .setIcon()
                 .addField('Username', message.author.username)
                 .addField('Joined on', message.member.joinedAt)
                 .addField('Account created on', message.author.createdAt)
