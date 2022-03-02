@@ -1,6 +1,8 @@
+const { MessageActionRow, MessageButton} = require('discord.js');
 const Discord = require('discord.js');
 const botsettings = require('./botsettings.json')
 const client = new Discord.Client({disableEveryone: true});
+const av = require('./entities/images.json');
 
 
 require("./util/eventHandler")(client)
@@ -85,7 +87,7 @@ client.on("message" ,function(message) {
         if(err) console/log(err)
     })
 
-    //if someone typed in chat =level it will make a embed
+    //if someone typed in chat =level it will make an embed
     if(message.content.startsWith("+level")){
         let user = message.mentions.users.first() || message.author
 
