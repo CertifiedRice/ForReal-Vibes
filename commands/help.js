@@ -101,7 +101,6 @@ module.exports.run = async (client, message, args) =>
                 (
                     { name: '**Command Categories**\n', value:
                             '``+userinfo      :`` User information\n' +
-                            '``+profile    :`` user profile\n' +
                             '``+serverinfo      :`` Server Information', inline: true }
                 )
 
@@ -112,7 +111,6 @@ module.exports.run = async (client, message, args) =>
         //Normal usage of (prefix)help without any args. (Shows all of the commands and you should set the commands yourself)
         if(!helpArgs[0]) 
         {
-
             var embed = new Discord.MessageEmbed()
                 .setColor(colorEmbed.color)
                 .setAuthor(`ForReal Vibes`, av.avatarBot)
@@ -127,6 +125,8 @@ module.exports.run = async (client, message, args) =>
                             '``leveling  :`` Commands for the leveling system\n' +
                     '``mod      :`` Commands for mods\n', inline: true }
                 )
+                
+            message.channel.send(embed);
         }
 
         if(helpArgs[0]) 
