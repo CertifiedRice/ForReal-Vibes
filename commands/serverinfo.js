@@ -33,7 +33,7 @@ module.exports.run = async (client, message, args) =>
                 .addField(`Voice channels: `, `${message.guild.channels.cache.filter(channel => channel.type === 'voice').size}`, true)
                 .addField(`Members: `, `${message.guild.memberCount}`, true)
                 .addField(`Roles: `, `${message.guild.roles.cache.size}`, true)
-                .addField('Server ID:', `${message.guild.id}`, true)
+                .setFooter('Server ID: ' + message.guild.id)
                 .addField('Server Region:', `${message.guild.region}`, true)
                 .addField('Server Created At:', `${message.guild.createdAt}`, true)
 
