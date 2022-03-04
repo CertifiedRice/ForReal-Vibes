@@ -4,7 +4,6 @@ const botsettings = require('./botsettings.json')
 const client = new Discord.Client({disableEveryone: true});
 const av = require('./entities/images.json');
 
-
 require("./util/eventHandler")(client)
 
 const fs = require("fs");

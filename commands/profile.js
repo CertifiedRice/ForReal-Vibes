@@ -3,7 +3,7 @@ const botsettings = require('../botsettings.json');
 const colorEmbed = require('../entities/color.json');
 const av = require('../entities/images.json');
 
-const xpfile = require('../xp.json')
+const xpfile = require('../xp.json');
 
 module.exports.run = async (client, message, args) =>
 {
@@ -21,8 +21,7 @@ module.exports.run = async (client, message, args) =>
                 .setThumbnail(user.displayAvatarURL())
                 .setTitle(`${user.username}'s Profile`)
                 .addField("Level: ",xpfile[user.id].level)
-                .addField("Work in progress...")
-
+                .addField("XP: ",xpfile[user.id].xp)
             message.channel.send(embed);
         }
     }
